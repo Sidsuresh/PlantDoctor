@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.result-container {
+  margin-top: 104px;
+  height: 100vh;
+  background: linear-gradient(
+      to right,
+      rgba(101, 186, 140, 0.4),
+      rgba(101, 186, 140, 0.4)
+    ),
+    url("../../../Assets/Images/Designer.png");
+  background-color: #f8f4f4;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+.result-child {
+  max-width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+  vertical-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 27%;
+  bottom: 0;
+  border-radius: 20px;
+  box-shadow: 0 0px 20px rgba(201, 201, 201, 0.541);
+  margin: auto;
+  background-color: #f8f4f4;
+  padding: 3%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.result-row-one {
+  display: flex;
+  flex-direction: row;
+  height: 45%;
+  gap: 5%;
+}
+
+.result-title-back {
+  display: flex;
+  flex-direction: row;
+  gap: 15%;
+}
+
+.result-back {
+  font-size: 1.7rem;
+  width: 2.5%;
+}
+
+.result-title {
+  height: 5%;
+  font-size: 1.7rem;
+  text-align: center;
+  width: 72.5%;
+}
+
+.title {
+  font-family: "Staatliches", cursive;
+  margin-left: 5%;
+  font-size: 1.5rem;
+  height: 30%;
+}
+
+.result-gauge {
+  box-shadow: 0 0px 20px rgba(201, 201, 201, 0.541);
+  width: 25%;
+  height: 100%;
+  background-color: #fcfaee;
+  padding: 1.25%;
+  border-radius: 10%;
+  /*font-family: "Roboto", sans-serif; */
+  font-size: 2.2rem;
+}
+
+.gauge_body {
+  width: 100%;
+  height: 0;
+  padding-bottom: 50%;
+  background: #b4c0be;
+  position: relative;
+  border-top-left-radius: 100% 200%;
+  border-top-right-radius: 100% 200%;
+  overflow: hidden;
+}
+
+.gauge_fill {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: inherit;
+  height: 100%;
+  background: #009578;
+  transform-origin: center top;
+  transform: rotate(0.25turn);
+  transition: transform 0.2s ease-out;
+}
+
+.gauge_cover {
+  width: 75%;
+  height: 150%;
+  background: #fcfaee;
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* Text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 25%;
+  box-sizing: border-box;
+  color: #004033;
+}
+
+.result-prediction {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+
+.result-crop {
+  box-shadow: 0 0px 20px rgba(201, 201, 201, 0.541);
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  background-color: #fcfaee;
+  border-radius: 10%;
+  gap: 5%;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  height: 60%;
+  gap: 5%;
+  width: 100%;
+}
+
+.crop-info {
+  width: 70%;
+  margin-left: 5%;
+  font-size: 1.2rem;
+  font-family: "Assistant", sans-serif;
+  color: black;
+  word-break: break-word;
+}
+
+.crop-vector {
+  width: 35%;
+  height: 100%;
+  background: url(../../../Assets/Images/widgets/plant.jpg);
+  background-size: 100% 100%;
+}
+
+.result-disease {
+  box-shadow: 0 0px 20px rgba(201, 201, 201, 0.541);
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  background-color: #fcfaee;
+  border-radius: 10%;
+}
+
+.disease-info {
+  width: 70%;
+  margin-left: 5%;
+  font-size: 1.2rem;
+  padding: 2%;
+  font-family: "Assistant", sans-serif;
+  color: black;
+  word-break: break-;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.disease-info::-webkit-scrollbar {
+  width: 10px;
+}
+
+.disease-info::-webkit-scrollbar-thumb {
+  background-color: #8981e0;
+  border-radius: 12px;
+}
+
+.disease-vector {
+  width: 35%;
+  height: 100%;
+  background: url(../../../Assets/Images/widgets/Disease.png);
+  background-size: 100% 100%;
+}
+
+.result-abtdis {
+  box-shadow: 0 0px 20px rgba(201, 201, 201, 0.541);
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5%;
+  background-color: #fcfaee;
+  border-radius: 10%;
+}
+
+.abtdis-title {
+  font-family: "Staatliches", cursive;
+  margin-left: 5%;
+  font-size: 1.5rem;
+  height: 20%;
+}
+
+.abtdis-content {
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  height: 70%;
+  gap: 5%;
+  width: 100%;
+}
+
+.abtdis-info {
+  width: 80%;
+  margin-left: 2%;
+  font-size: 1.2rem;
+  padding: 3%;
+  font-family: "Assistant", sans-serif;
+  color: black;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.abtdis-vector {
+  width: 15%;
+  display: flex;
+  height: 100%;
+  background: url(../../../Assets/Images/widgets/about.jpeg);
+  background-size: 65% 65%;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 40%;
+  left: 5%;
+}
+
+.result-crop-facts {
+  width: 24%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+
+.result-temp {
+  box-shadow: 0 0px 20px rgba(201, 201, 201, 0.541);
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  background-color: #fcfaee;
+  border-radius: 10%;
+  gap: 5%;
+}
+
+.temp-info {
+  width: 70%;
+  margin-left: 5%;
+  font-size: 1.2rem;
+  font-family: "Assistant", sans-serif;
+  color: black;
+}
+
+.temp-vector {
+  width: 35%;
+  height: 100%;
+  background: url(../../../Assets/Images/widgets/temp.png);
+  background-size: 100% 100%;
+}
+
+.result-humidity {
+  box-shadow: 0 0px 20px rgba(201, 201, 201, 0.541);
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  background-color: #fcfaee;
+  border-radius: 10%;
+  gap: 5%;
+}
+
+.humid-info {
+  width: 70%;
+  margin-left: 5%;
+  font-size: 1.2rem;
+  font-family: "Assistant", sans-serif;
+  color: black;
+}
+
+.humid-vector {
+  width: 35%;
+  height: 100%;
+  background: url(../../../Assets/Images/widgets/moisture.jpg);
+  background-size: 100% 100%;
+}
+
+.result-prevention {
+  box-shadow: 0 0px 20px rgba(201, 201, 201, 0.541);
+  width: 71%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5%;
+  background-color: #fcfaee;
+  border-radius: 7%;
+}
+
+.prevention-title {
+  font-family: "Staatliches", cursive;
+  margin-left: 1%;
+  font-size: 1.5rem;
+  height: 25%;
+}
+
+.prevention-content {
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  height: 70%;
+  gap: 2%;
+  width: 100%;
+}
+
+.prevention-info {
+  width: 85%;
+  font-size: 1.2rem;
+  font-family: "Assistant", sans-serif;
+  color: black;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 1%;
+}
+
+.prevention-info::-webkit-scrollbar,
+.abtdis-info::-webkit-scrollbar {
+  width: 10px;
+}
+
+.prevention-info::-webkit-scrollbar-thumb,
+.abtdis-info::-webkit-scrollbar-thumb {
+  background-color: #8981e0;
+  border-radius: 12px;
+}
+
+.prevention-points {
+  margin-bottom: 1%;
+}
+
+.prevention-vector {
+  width: 15%;
+  display: flex;
+  height: 100%;
+  background: url(../../../Assets/Images/widgets/treatment.jpg);
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 40%;
+  left: 5%;
+}
+
+@media (max-width: 425px) {
+  .result-row-one {
+    flex-direction: column;
+    gap: 10%;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+  .result-row-one::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .result-row-one::-webkit-scrollbar-thumb {
+    background-color: #8981e0;
+    border-radius: 12px;
+  }
+
+  .result-prediction {
+    width: 100%;
+    height: 30%;
+    flex-direction: row;
+    gap: 5%;
+  }
+
+  .result-crop {
+    height: 100%;
+    width: 47.5%;
+  }
+
+  .result-disease {
+    height: 100%;
+    width: 47.5%;
+  }
+
+  .result-gauge {
+    width: 100%;
+  }
+
+  .result-abtdis {
+    width: 100%;
+  }
+
+  .result-crop-facts {
+    flex-direction: column;
+    width: 100%;
+    gap: 10%;
+  }
+
+  .result-temp {
+    height: 100%;
+  }
+
+  .temp-vector {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .result-humidity {
+    height: 100%;
+  }
+
+  .result-prevention {
+    width: 100%;
+  }
+}

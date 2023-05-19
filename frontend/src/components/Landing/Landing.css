@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.landing-container {
+  height: 100vh;
+  background: linear-gradient(
+      to right,
+      rgba(101, 186, 140, 0.4),
+      rgba(101, 186, 140, 0.4)
+    ),
+    url("../../Assets/Images/Designer.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.child {
+  max-width: 50%;
+  max-height: 80%;
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 20px;
+  box-shadow: 0 0px 20px rgba(201, 201, 201, 0.541);
+  margin: auto;
+  background-color: whitesmoke;
+}
+
+.child-one {
+  width: 40%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 15%;
+}
+
+.landing-title {
+  font-family: "Staatliches", cursive;
+  font-size: 3rem;
+  color: #009b72;
+}
+
+.content {
+  text-align: justify;
+  font-size: 1.2rem;
+  color: #6761a8;
+  font-family: "Open Sans", sans-serif;
+}
+
+.proceed {
+  padding: 7%;
+  border-radius: 10px;
+  border: 0;
+  background: linear-gradient(to right, #43ecbf, #8981e0);
+  font-size: 1.3rem;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.child-two {
+  width: 60%;
+  height: auto;
+  background: url("../../Assets/Images/frontimg.jpg");
+  background-size: 100% 100%;
+  background-attachment: local;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  clip-path: polygon(0 50%, 35% 0, 100% 0, 100% 100%, 35% 100%);
+}
+
+@media (max-width: 768px) {
+  .child {
+    flex-direction: column;
+    background: linear-gradient(
+        0,
+        rgba(137, 129, 224, 0.2),
+        rgba(137, 129, 224, 0.2)
+      ),
+      url("../../Assets/Images/frontimg.jpg");
+    background-size: 100% 100%;
+    max-height: 50%;
+  }
+
+  .content {
+    color: #f5efff;
+  }
+
+  .child-one {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .child {
+    flex-direction: column;
+    background: linear-gradient(
+        0,
+        rgba(137, 129, 224, 0.2),
+        rgba(137, 129, 224, 0.2)
+      ),
+      url("../../Assets/Images/frontimg.jpg");
+    background-size: 100% 100%;
+    max-height: 60%;
+    max-width: 80%;
+  }
+
+  .content {
+    color: #f5efff;
+  }
+
+  .child-one {
+    width: 100%;
+  }
+}

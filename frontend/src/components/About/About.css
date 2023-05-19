@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap");
+
+.about-container {
+  background: linear-gradient(
+      to right,
+      rgba(101, 186, 140, 0.4),
+      rgba(101, 186, 140, 0.4)
+    ),
+    url("../../Assets/Images/Designer.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  margin-top: 104px;
+}
+
+.proj-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 0.2%;
+  margin: 2%;
+}
+
+.title {
+  font-family: "Staatliches", cursive;
+  font-size: 1.4rem;
+}
+
+.exp-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  background-color: white;
+  /* min-height: 85%; */
+  box-shadow: 0 0px 20px rgba(201, 201, 201, 0.541);
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.lbl-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  background-color: white;
+  /* min-height: 85%; */
+  box-shadow: 0 0px 20px rgba(201, 201, 201, 0.541);
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.lbl-title {
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(41, 41, 90);
+  text-decoration: underline;
+}
+
+.lbl-cell-content ul {
+  color: black;
+  list-style: none;
+}
+
+.lbl-cell-content li {
+  font-size: 1rem;
+  padding: 2px;
+}
+
+.lbl-cell-content li::before {
+  content: "\2023";
+  color: darkorange;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.row-one {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 200px;
+  gap: 2%;
+}
+
+.cont-one {
+  width: 24%;
+  height: 250px;
+}
+
+.cont-two {
+  width: 23.5%;
+  height: 250px;
+}
+
+.cont-one:hover > .card-one {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.cont-two:hover > .card-one {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.card-one {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+
+.front-apple,
+.front-blueberry,
+.front-cherry,
+.front-corn,
+.front-grape,
+.front-orange,
+.front-peach,
+.front-bellpepper,
+.front-potato,
+.front-raspberry,
+.front-soybean,
+.front-squash,
+.front-strawberry,
+.front-tomato,
+.back {
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+  box-shadow: 0 0px 20px rgba(201, 201, 201, 0.541);
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front-apple {
+  background: url(../../Assets/Images/abt-veg/apples.avif);
+  background-size: 100% 100%;
+}
+
+.front-blueberry {
+  background: url(../../Assets/Images/abt-veg/blueberry.avif);
+  background-size: 100% 100%;
+}
+
+.front-cherry {
+  background: url(../../Assets/Images/abt-veg/cherry.avif);
+  background-size: 100% 100%;
+}
+
+.front-corn {
+  background: url(../../Assets/Images/abt-veg/corn.avif);
+  background-size: 100% 100%;
+}
+
+.front-grape {
+  background: url(../../Assets/Images/abt-veg/grapes.avif);
+  background-size: 100% 100%;
+}
+
+.front-orange {
+  background: url(../../Assets/Images/abt-veg/oranges.avif);
+  background-size: 100% 100%;
+}
+
+.front-peach {
+  background: url(../../Assets/Images/abt-veg/peach.avif);
+  background-size: 100% 100%;
+}
+
+.front-bellpepper {
+  background: url(../../Assets/Images/abt-veg/bellpepper.avif);
+  background-size: 100% 100%;
+}
+
+.front-potato {
+  background: url(../../Assets/Images/abt-veg/potato.avif);
+  background-size: 100% 100%;
+}
+
+.front-raspberry {
+  background: url(../../Assets/Images/abt-veg/raspberry.avif);
+  background-size: 100% 100%;
+}
+
+.front-soybean {
+  background: url(../../Assets/Images/abt-veg/soybean.avif);
+  background-size: 100% 100%;
+}
+
+.front-squash {
+  background: url(../../Assets/Images/abt-veg/squash.avif);
+  background-size: 100% 100%;
+}
+
+.front-strawberry {
+  background: url(../../Assets/Images/abt-veg/strawberry.avif);
+  background-size: 100% 100%;
+}
+
+.front-tomato {
+  background: url(../../Assets/Images/abt-veg/tomato.avif);
+  background-size: 100% 100%;
+}
+
+.back {
+  /* background-color: antiquewhite;  */
+  transform: rotateY(180deg);
+  padding: 5%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.back::-webkit-scrollbar {
+  width: 10px;
+}
+
+.back::-webkit-scrollbar-thumb {
+  background-color: #8981e0;
+  border-radius: 12px;
+}
+
+@media (max-width: 425px) {
+  .row-one {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cont-one {
+    width: 100%;
+  }
+
+  .cont-two {
+    width: 99.5%;
+  }
+}

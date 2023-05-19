@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  padding: 3.4%;
+  margin-top: 104px;
+}
+
+.drop-prev-container {
+  color: hsl(0, 0, 20%);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  box-shadow: 0 0px 20px rgba(201, 201, 201, 0.541);
+  padding: 0.2%;
+  margin: 2%;
+  border-radius: 10px;
+}
+
+.drop-container {
+  justify-content: center;
+  margin: 20px;
+  text-align: center;
+  align-items: center;
+  height: 10%;
+  width: 90%;
+  border: 2px dashed lightgray;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.preview-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  text-align: center;
+  align-items: center;
+  min-height: 300px;
+  height: 0px;
+  width: 90%;
+  border: 2px dashed lightblue;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.img-preview {
+  width: 95%;
+  height: 95%;
+  border-radius: 10px;
+}
+
+.button-container {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 90%;
+  padding: 5px;
+}
+
+.upload-btn {
+  justify-content: center;
+  text-align: center;
+  /* margin: 15px; */
+  border-radius: 10px;
+  padding: 14px 0;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 15px;
+  background-color: transparent;
+}
+
+.upload-btn:hover {
+  color: #f3f5f8;
+  background-color: black;
+  border: 2px solid white;
+}
+
+.cls-conf-container {
+  display: flex;
+  gap: 10%;
+  width: 30%;
+  flex-direction: column;
+  padding: 0.2%;
+  margin: 2%;
+}
+
+.cls-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20%;
+  background-color: white;
+  height: 45%;
+  box-shadow: 0 0px 20px rgba(201, 201, 201, 0.541);
+  border-radius: 10px;
+  padding: 10%;
+}
+
+.title {
+  font-family: "Staatliches", cursive;
+  font-size: 1.2rem;
+}
+
+.crop-content {
+  width: 35%;
+}
+
+.disease-content {
+  width: 55%;
+}
+
+.cls-p {
+  display: flex;
+  color: #413871;
+  font-size: 100%;
+  width: 50%;
+  text-align: justify;
+}
+
+.conf-container {
+  background-color: white;
+  height: 45%;
+  box-shadow: 0 0px 20px rgba(201, 201, 201, 0.541);
+  border-radius: 10px;
+  padding: 10%;
+}
+
+.conf-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  /* border: 1px solid black; */
+  gap: 20%;
+}
+
+.conf-p {
+  color: #413871;
+  font-size: 1.7rem;
+  width: 50%;
+}
+
+.conf-gauge {
+  display: flex;
+}
+
+.prevention-container {
+  width: 30%;
+  padding: 0.2%;
+  margin: 2%;
+}
+
+.prevention-box {
+  background-color: white;
+  min-height: 85%;
+  box-shadow: 0 0px 20px rgba(201, 201, 201, 0.541);
+  border-radius: 10px;
+  padding: 10%;
+}
+
+/* .prevention-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 7%;
+  text-align: justify;
+} */

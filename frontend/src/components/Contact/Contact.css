@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact-container {
+  margin-top: 104px;
+  height: 100vh;
+  background: linear-gradient(
+      to right,
+      rgba(101, 186, 140, 0.4),
+      rgba(101, 186, 140, 0.4)
+    ),
+    url("../../Assets/Images/Designer.png");
+  background-color: #f8f4f4;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+.contact-content {
+  max-width: 70%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  vertical-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 27%;
+  bottom: 0;
+  border-radius: 20px;
+  box-shadow: 0 0px 20px rgba(201, 201, 201, 0.541);
+  margin: auto;
+  background-color: #fcfaee;
+  padding: 3%;
+}
+
+.contact-bg {
+  width: 50%;
+  background: url(../../Assets/Images/Contact_Me.jpg);
+  background-size: 100% 100%;
+}
+
+.contact-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  width: 100%;
+  color: black;
+  padding: 3%;
+  margin-bottom: 4%;
+  display: block;
+  height: 20%;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  font-weight: 450;
+  font-family: "Barlow Condensed", sans-serif;
+  background-color: transparent;
+  border: 2px solid hsl(0, 0, 20%);
+}
+
+textarea {
+  height: 40%;
+}
+
+input[type="submit"] {
+  margin-top: 2%;
+  border: 2px solid black;
+  color: black;
+  border-radius: 50px;
+  width: 160px;
+  height: 50px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: center;
+  background-color: transparent;
+  font-family: "Poppins SemiBold";
+}
+
+input[type="submit"]:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    gap: 5%;
+  }
+  input,
+  textarea {
+    height: 30%;
+  }
+
+  textarea {
+    height: 50%;
+  }
+}
+
+@media (max-width: 425px) {
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-form {
+    background: linear-gradient(
+        0,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url(../../Assets/Images/Contact_Me.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+  }
+  input,
+  textarea {
+    height: 80px;
+    font-size: 1rem;
+  }
+
+  textarea {
+    height: 120px;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    border-radius: 20px;
+  }
+}
